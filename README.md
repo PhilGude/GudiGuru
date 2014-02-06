@@ -1,4 +1,0 @@
-GudiGuru
-========
-
-Gudi.Guru
