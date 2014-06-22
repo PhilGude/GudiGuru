@@ -5904,3 +5904,8 @@ legend {
 .affix {
   position: fixed;
 }
+
+iframe {
+  width : 100%;
+  border : none;
+}
