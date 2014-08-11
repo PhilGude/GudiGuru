@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
   <head>
     <title>Gudi Guru</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+    <meta property="fb:app_id" content="542167829239668"/>
     <link rel="stylesheet" href="./bootstrap.css" media="screen">
     <link rel="stylesheet" href="../assets/css/bootswatch.min.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
-      <script src="../bower_components/respond/dest/respond.min.js"></script>
-    <![endif]-->
+    <script src="/js/angular.min.js"></script>
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=542167829239668&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -37,7 +42,7 @@
         <div class="row">
           <div class="col-lg-6">
             <h1>Gudi Guru</h1>
-            <p class="lead">home of a musician and engineer doing stuff around video games, sound design and music production</p>
+            <p class="lead">home of a musician and mix engineer producing songs for video games and delightful projects</p>
             <ul class="breadcrumb">
               <li><a href="#">Home</a></li>
               <li class="active">Blog</li>
@@ -47,17 +52,20 @@
             <div class="well">
               <a href="http://gudi.guru/" rel="nofollow" target="_blank">
                 <span style="float: left; margin-right: 15px;">
-                  <img src="../assets/images/PhilippeGudemann.jpg" width="175" height="135" style="border-radius: 4px;" alt="Philippe Gudemann">
+                  <img src="http://a4.mzstatic.com/us/r30/Music4/v4/8f/70/24/8f70243f-7438-9b2b-41cc-1264673dc616/849926038830.170x170-75.jpg" style="border-radius: 4px;" alt="Philippe Gudemann">
                 </span>
               </a>
               <a href="http://gudi.guru/" rel="nofollow" target="_blank">
-                <h4 style="margin-bottom: 0.4em; color: #fff;">Welcome beloved listener !</h4>
-                <div style="color: #fff;" class="clearfix">I'm blessed by your visit ! You can discover below most of the musical stuff I'm working on.</div>
+                <h4 style="margin-bottom: 0.4em; color: #fff;">Latest Commercial Release</h4>
+                <div style="color: #fff;" class="clearfix"><h3>Corporate non sense</h3><a href="http://spoti.fi/1eWD9Al" target="spotify_store" style="display:inline-block;overflow:hidden;background:url(https://bit.ly/1pyTGto) no-repeat;width:101px;height:39px;@media only screen"></a><a href="http://bit.ly/1lmoKvw" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.png) no-repeat;width:110px;height:40px;@media only screen{background-image:url(http://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.svg);}"></a><a href="http://amzn.to/1nrc6PV" target="amazon_store" style="display:inline-block;overflow:hidden;background:url(https://bit.ly/1pySSEP) no-repeat;width:101px;height:39px;@media only screen"></a>
+                </div>
               </a>
             </div>
           </div>
         </div>
       </div>
+      
+
       <!-- Containers
       ================================================== -->
       <div class="bs-docs-section">
@@ -65,18 +73,18 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="page-header">
-              <h1 id="ratataplan">Saturday the 21th June : Ratataplan</h1>
+              <h1 id="ratataplan">Saturday the 21th June : Ratataplan Nothing here</h1>
             </div>
             <div class="bs-example">
               <div class="jumbotron" style="color:#E8D069;">
                 <h1>Ratataplan : ZE CLIP</h1>
                 <p>Helped some friends to record a few tracks of their playslist to support their funny clip. Watch it here !</p>
                 <p><iframe height="315" src="//www.youtube.com/embed/kIx5nXtNT-U" allowfullscreen></iframe></p>
+                <div class="fb-comments" data-href="http://gudi.guru" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
               </div>
             </div>
           </div>
         </div>
-
         <div class="row">
           <div class="col-lg-12">
             <div class="page-header">
