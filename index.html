@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="postsApp">
   <head>
     <title>Gudi Guru</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta property="fb:app_id" content="542167829239668"/>
     <meta name="description" content="Home of Gudi Guru a musicien and mix engineer.">
-    <link rel="stylesheet" href="../css/bootstrap.css" media="screen">
-    <link rel="stylesheet" href="../css/bootswatch.min.css">
-    <script src="../js/angular.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/bootswatch.min.css">
+    <script src="js/angular.js"></script>
+    <script src="js/controllers.js"></script>
   </head>
-  <body>
+  <body ng-controller="PostsListCrtl">
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -46,7 +47,7 @@
         <div class="row">
           <div class="col-lg-6">
             <h1>Gudi Guru</h1>
-            <p class="lead">home of a musician, mix engineer and sound designer</p>
+            <p class="lead">home of a coding musician, mix engineer and sound designer</p>
             <ul class="breadcrumb">
               <li><a href="#">Home</a></li>
               <li class="active">Blog</li>
@@ -74,44 +75,16 @@
       <!-- Containers
       ================================================== -->
       <div class="bs-docs-section">
-       <div class="row">
+       <div class="row" ng-repeat="post in posts" >
           <div class="col-lg-12">
             <div class="page-header">
-              <h1 id="sylenth">Friday, the 10th April 2015</h1>
+              <h1 id="sylenth">{{post.date}}</h1>
             </div>
             <div class="bs-example">
               <div class="jumbotron" style="color:#E8D069;">
-                <h1>Is This real Life ?</h1>
-                <p>I have been helping my good friend Organ Mug on his latest record <strong>Is This Real Life</strong>. The record was made during a worldtour and discussing eq and compression between switzerland, India, Sri Lanka and Japan was good fun. Go discover his fantastic music</p>
-                <p><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/200551259&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="page-header">
-              <h1 id="sylenth">Saturday, the 17th January 2015</h1>
-            </div>
-            <div class="bs-example">
-              <div class="jumbotron" style="color:#E8D069;">
-                <h1>Vouipe - Moop</h1>
-                <p>The Swiss band Vouipe released there third opus. I was involved as mix engineer and drummer. The songs Medicament is broadcasted at the swiss radio couleur 3.</p>
-                <p><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/133268807&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="page-header">
-              <h1 id="ratataplan">Thursday, the 1st January 2015</h1>
-            </div>
-            <div class="bs-example">
-              <div class="jumbotron" style="color:#E8D069;">
-                <h1>Nandeyanen!? (Original Game Soundtrack)</h1>
-                <p>Tchagata Games released the original game soundtrack of the video game Nandeyanen!? I proudly composed and mixed 5 songs for the games.</p>
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/184784596&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>   
+                <h1>{{post.title}}</h1>
+                <p>{{post.intro}}</p>
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" ng-src="{{trustSrc(post.iframe)}}"></iframe>
               </div>
             </div>
           </div>
