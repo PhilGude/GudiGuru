@@ -8,7 +8,7 @@ postsApp.controller('PostsListCrtl', function ($scope, $sce) {
     {
      'title': 'Is This real Life ?',
      'date': 'Friday, the 10th April 2015',
- 	   'intro':'I have been helping my good friend Organ Mug on his latest record <strong>Is This Real Life</strong>. The record was made during a worldtour and discussing eq and compression between switzerland, India, Sri Lanka and Japan was good fun. Go discover his fantastic music',
+ 	   'intro':'I have been helping my good friend Organ Mug on his latest record Is This Real Life? The record was made during a worldtour and discussing eq and compression between switzerland, India, Sri Lanka and Japan was good fun. Go discover his fantastic music',
   	 'iframe':'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/200551259&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false'
   	},
   	{
