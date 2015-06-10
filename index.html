@@ -4,23 +4,14 @@
     <title>Gudi Guru</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta property="fb:app_id" content="542167829239668"/>
-    <meta name="description" content="Home of Gudi Guru a musicien and mix engineer.">
+    <meta name="description" content="Home of Gudi Guru a coding musician, mix engineer and sound designer">
     <link rel="stylesheet" href="css/bootstrap.css" media="screen">
     <link rel="stylesheet" href="css/bootswatch.min.css">
     <script src="js/angular.js"></script>
     <script src="js/controllers.js"></script>
   </head>
   <body ng-controller="PostsListCrtl">
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=542167829239668&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
-    <div class="navbar navbar-default navbar-fixed-top">
+ <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <a href="../" class="navbar-brand">Gudi.Guru</a>
@@ -50,30 +41,12 @@
             <p class="lead">home of a coding musician, mix engineer and sound designer</p>
             <ul class="breadcrumb">
               <li><a href="#">Home</a></li>
-              <li class="active">Blog</li>
+              <li class="active"><a href="#">Blog</a></li>
             </ul>
           </div>
-          <div class="col-lg-6" style="padding: 15px 15px 0 15px;">
-            <div class="well">
-              <a href="http://gudi.guru/" rel="nofollow" target="_blank">
-                <span style="float: left; margin-right: 15px;">
-                  <img src="http://a4.mzstatic.com/us/r30/Music4/v4/8f/70/24/8f70243f-7438-9b2b-41cc-1264673dc616/849926038830.170x170-75.jpg" style="border-radius: 4px;" alt="Philippe Gudemann">
-                </span>
-              </a>
-              <a href="http://gudi.guru/" rel="nofollow" target="_blank">
-                <h4 style="margin-bottom: 0.4em; color: #fff;">Latest Commercial Release</h4>
-                <div style="color: #fff;" class="clearfix"><h3>Nandeyanen!? (Original Game Soundtrack)</h3>
-                  <a href="http://spoti.fi/1Bv1N13" target="spotify_store" style="display:inline-block;overflow:hidden;background:url(https://bit.ly/1pyTGto) no-repeat;width:101px;height:39px;@media only screen"></a>    
-                  <a href="http://bit.ly/1AmzGTm" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.png) no-repeat;width:110px;height:40px;@media only screen{background-image:url(http://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.svg);}"></a>    
-                  <a href="http://amzn.to/1BoYDhd" target="amazon_store" style="display:inline-block;overflow:hidden;background:url(https://bit.ly/1pySSEP) no-repeat;width:101px;height:39px;@media only screen"></a>    
-                </div>
-              </a>
-            </div>
-          </div>
+          <div ng-include="'/partials/newReleases.html'"></div>
         </div>
       </div>
-      <!-- Containers
-      ================================================== -->
       <div class="bs-docs-section">
        <div class="row" ng-repeat="post in posts" >
           <div class="col-lg-12">
@@ -89,43 +62,9 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="alert alert-dismissable alert-danger">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <h4>Contact</h4>
-                <p>Drop me an email at<a href="#" class="alert-link"> guru at gudemann dot ch</a>.</p>                
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="alert alert-dismissable alert-success">
-              <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <h4>Mixing / Mastering engineer</h4>
-              <strong>Got some issues on your mix project ?</strong> sure I can help.
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="alert alert-dismissable alert-info">
-              <button type="button" class="close" data-dismiss="alert">&times;</button>
-              <h4>Video Games</h4>
-              <strong>Are you developing a Video Game ?</strong> I really enjoy working on sound design. Contact me, I would love to hear what your project is about.
-            </div>
-          </div>
-        </div>
+        <div ng-include="'/partials/contact.html'"></div>
       </div>
-      <footer>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="list-unstyled">
-              <li class="pull-right"><a href="#top">Back to top</a></li>
-            </ul>
-            <p>Based on a code made by <a href="http://thomaspark.me" rel="nofollow">Thomas Park</a>. Contact him at <a href="mailto:hello@thomaspark.me">hello@thomaspark.me</a>.</p>
-            <p>Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE">MIT License</a>.</p>
-            <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
-          </div>
-        </div>
-      </footer>
+     <div ng-include="'/partials/footer.html'"></div>
     </div>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
   </body>
 </html>
