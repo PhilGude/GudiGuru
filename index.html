@@ -2,8 +2,8 @@
 <html lang="en" ng-app="postsApp">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="Home of Gudi Guru a coding musician, mix engineer and sound designer">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Gudi Guru</title>
@@ -23,13 +23,6 @@
     <meta name="msapplication-TileColor" content="#3372DF">
 
     <link rel="shortcut icon" href="images/favicon.png">
-
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="description" content="Home of Gudi Guru a coding musician, mix engineer and sound designer">
-
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.0/material.grey-orange.min.css">
@@ -38,31 +31,30 @@
     <script src="js/angular.js"></script>
     <script src="js/controllers.js"></script>
   </head>
-  <body> <!--ng-controller="PostsListCrtl">-->
- 
+<body ng-controller="PostsListCrtl">
  <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
   <main class="mdl-layout__content">
         <div class="demo-blog__posts mdl-grid">
           <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col">
             <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="entry.html">Coffee Pic</a></h3>
+              <h3><a href="entry.html">I³ Game Jam</a></h3>
             </div>
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"></div>
               <div>
-                <strong>The Newist</strong>
+                <strong>Gudi Guru</strong>
                 <span>2 days ago</span>
               </div>
             </div>
           </div>
+
           <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
             <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
               <i class="material-icons mdl-color-text--white" role="presentation">add</i>
               <span class="visuallyhidden">add</span>
             </button>
             <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
-              <img src="images/logo.png">
-              +1,337
+              <div ng-include="'/partials/newReleases.html'"></div>
             </div>
             <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
               <div>
@@ -73,6 +65,7 @@
                 <li class="mdl-menu__item">Records</li>
                 <li class="mdl-menu__item">Video Games</li>
                 <li class="mdl-menu__item">Video</li>
+                <li class="mdl-menu__item"><a href="../Archives.html">Archives</a></li>
               </ul>
               <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
                 <i class="material-icons" role="presentation">more_vert</i>
@@ -80,51 +73,22 @@
               </button>
             </div>
           </div>
-          <div class="mdl-card on-the-road-again mdl-cell mdl-cell--12-col">
+          <div ng-repeat="post in posts" ng-class="{ 'mdl-card shopping mdl-cell mdl-cell--12-col': $even, 'mdl-card on-the-road-again mdl-cell mdl-cell--12-col': $odd }">
             <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="entry.html">On the road again</a></h3>
+              <h3><a href="entry.html">{{post.title}}</a></h3>
             </div>
             <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
-              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+            {{post.intro}}
             </div>
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"></div>
               <div>
-                <strong>The Newist</strong>
-                <span>2 days ago</span>
+                <strong>Gudi Guru</strong>
+                <span>{{post.date}}</span>
               </div>
             </div>
           </div>
-          <div class="mdl-card amazing mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__title mdl-color-text--grey-50">
-              <h3 class="quote"><a href="entry.html">I couldn’t take any pictures but this was an amazing thing…</a></h3>
-            </div>
-            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-              <div class="minilogo"></div>
-              <div>
-                <strong>The Newist</strong>
-                <span>2 days ago</span>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-card shopping mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="entry.html">Shopping</a></h3>
-            </div>
-            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-              <div class="minilogo"></div>
-              <div>
-                <strong>The Newist</strong>
-                <span>2 days ago</span>
-              </div>
-            </div>
-          </div>
+
           <nav class="demo-nav mdl-cell mdl-cell--12-col">
             <div class="section-spacer"></div>
             <a href="entry.html" class="demo-nav__button" title="show more">
@@ -143,9 +107,6 @@
             <button class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
               <span class="visuallyhidden">Facebook</span>
             </button>
-            <button class="mdl-mini-footer--social-btn social-btn social-btn__gplus">
-              <span class="visuallyhidden">Google Plus</span>
-            </button>
           </div>
           <div class="mdl-mini-footer--right-section">
             <button class="mdl-mini-footer--social-btn social-btn__share">
@@ -157,60 +118,8 @@
       </main>
       <div class="mdl-layout__obfuscator"></div>
     </div>
-     <!-- <div class="container">
-        <div class="navbar-header">
-          <a href="../" class="navbar-brand">Gudi.Guru</a>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse" id="navbar-main">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="../">Blog</a>
-            </li>
-            <li>
-              <a href="../Archives.html">Archives</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="page-header" id="banner">
-        <div class="row">
-          <div class="col-lg-6">
-            <h1>Gudi Guru</h1>
-            <p class="lead">home of a coding musician, mix engineer and sound designer</p>
-            <ul class="breadcrumb">
-              <li><a href="#">Home</a></li>
-              <li class="active"><a href="#">Blog</a></li>
-            </ul>
-          </div>
-          <div ng-include="'/partials/newReleases.html'"></div>
-        </div>
-      </div>
-      <div class="bs-docs-section">
-       <div class="row" ng-repeat="post in posts" >
-          <div class="col-lg-12">
-            <div class="page-header">
-              <h1 id="sylenth">{{post.date}}</h1>
-            </div>
-            <div class="bs-example">
-              <div class="jumbotron" style="color:#E8D069;">
-                <h1>{{post.title}}</h1>
-                <p>{{post.intro}}</p>
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" ng-src="{{trustSrc(post.iframe)}}"></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div ng-include="'/partials/contact.html'"></div>
-      </div>
-     <div ng-include="'/partials/footer.html'"></div>
-    </div>-->
+    <!--<div ng-include="'/partials/footer.html'"></div>
+    <div ng-include="'/partials/contact.html'"></div>!-->
   </body>
     <script src="https://code.getmdl.io/1.1.0/material.min.js"></script>
     <script>

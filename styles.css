@@ -358,13 +358,13 @@ body .demo-blog {
   border-radius: 2px;
 }
 .social-btn__twitter {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png');
+  background-image: url('images/post_twitter_black_24dp.png');
 }
 .social-btn__blogger {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png');
+  background-image: url('images/post_facebook_black_24dp.png');
 }
 .social-btn__gplus {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_gplus_black_24dp.png');
+  background-image: url('images/post_gplus_black_24dp.png');
 }
 .social-btn__share {
   color: rgba(0, 0, 0, 0.54);
