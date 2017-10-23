@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gudi Guru</title>
+    <title>Gudi.guru</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -37,13 +37,12 @@
         <div class="demo-blog__posts mdl-grid">
           <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col">
             <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="entry.html">I³ Game Jam</a></h3>
             </div>
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"></div>
               <div>
-                <strong>Gudi Guru</strong>
-                <span>2 days ago</span>
+                <strong>Welcome to my modest home page</strong>
+                <span>I believe each song is a story full of hope, thoughts and feelings</span>
               </div>
             </div>
           </div>
@@ -79,11 +78,12 @@
             </div>
             <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
             {{post.intro}}
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" ng-src="{{trustSrc(post.iframe)}}"></iframe>
             </div>
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"></div>
               <div>
-                <strong>Gudi Guru</strong>
+                <strong>gudi.guru</strong>
                 <span>{{post.date}}</span>
               </div>
             </div>
