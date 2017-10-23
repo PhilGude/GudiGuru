@@ -42,7 +42,7 @@ body .demo-blog {
 }
 
 .demo-blog.mdl-layout .mdl-layout__content {
-  padding-top: 230px;
+  padding-top: 5s0px;
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
@@ -152,8 +152,8 @@ body .demo-blog {
   border-top-right-radius: 2px;
 }
 .demo-blog .something-else .mdl-card__media img {
-  width: 64px;
-  height: 64px;
+  width: 280px;
+  
   margin-bottom: 10px;
 }
 .demo-blog .something-else .mdl-card__supporting-text {
