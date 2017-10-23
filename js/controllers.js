@@ -5,6 +5,13 @@ postsApp.controller('PostsListCrtl', function ($scope, $sce) {
     return $sce.trustAsResourceUrl(src);
   }
   $scope.posts = [
+      {
+     'title': 'The Kraken will eat you',
+     'date': 'Friday, the 15th April 2017',
+     'intro':'My dear cousin Dimitri released with Vouipe his fourth cd. Being the mix enginineer was fun. Its quite a family business now :-)',
+     'iframe':'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/320795628&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false',
+     'class':'mdl-card on-the-road-again mdl-cell mdl-cell--12-col'
+    },
     {
      'title': 'Is This real Life ?',
      'date': 'Friday, the 10th April 2015',
