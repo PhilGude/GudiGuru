@@ -41,8 +41,8 @@
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
               <div class="minilogo"></div>
               <div>
-                <strong>Welcome to my modest home page</strong>
-                <span>I believe each song is a story full of hope, thoughts and feelings</span>
+                <strong>Musical Artist - Hobby Producer</strong>
+                <span>from Lausanne Switzerland</span>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@
           </div>
           <div ng-repeat="post in posts" ng-class="{ 'mdl-card shopping mdl-cell mdl-cell--12-col': $even, 'mdl-card on-the-road-again mdl-cell mdl-cell--12-col': $odd }">
             <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="entry.html">{{post.title}}</a></h3>
+              <h3>{{post.title}}</h3>
             </div>
             <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
             {{post.intro}}
@@ -88,16 +88,6 @@
               </div>
             </div>
           </div>
-
-          <nav class="demo-nav mdl-cell mdl-cell--12-col">
-            <div class="section-spacer"></div>
-            <a href="entry.html" class="demo-nav__button" title="show more">
-              More
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                <i class="material-icons" role="presentation">arrow_forward</i>
-              </button>
-            </a>
-          </nav>
         </div>
         <footer class="mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
