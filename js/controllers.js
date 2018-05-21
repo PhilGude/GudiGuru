@@ -9,7 +9,7 @@ postsApp.controller('PostsListCrtl', function ($scope, $sce) {
      'title': 'Electrocute single published',
      'date': 'Friday, the 15th April 2018',
      'intro':'I applied a different mix template on a song I already published on Soundclound and decided to push it to all major streamin plateform. My goodfriend Adrien from Native Pixel did a fantastic cover',
-     'iframe':'https://spoti.fi/2H2CmkS',
+     'iframe':'https://open.spotify.com/album/1my3iLJ2RZ83mcWUtkYDTA',
      'class':'mdl-card on-the-road-again mdl-cell mdl-cell--12-col'
     },
       {
