@@ -5,10 +5,17 @@ postsApp.controller('PostsListCrtl', function ($scope, $sce) {
     return $sce.trustAsResourceUrl(src);
   }
   $scope.posts = [
+  {
+     'title': 'Cosmic hum',
+     'date': 'Friday, the 28th Ocotober 2018',
+     'intro':'Once again I had the pleasure to work as a mix engineer for the band Vouipe. The new release is called comsic hum. Check it out !',
+     'iframe':'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/562037931&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
+     'class':'mdl-card on-the-road-again mdl-cell mdl-cell--12-col'
+    },
         {
      'title': 'Electrocute single published',
      'date': 'Friday, the 15th April 2018',
-     'intro':'I applied a different mix template on a song I already published on Soundclound and decided to push it to all major streamin plateform. My goodfriend Adrien from Native Pixel did a fantastic cover',
+     'intro':'I applied a different mix template on a song I already published on Soundclound and decided to push it to all major streamin plateform like spotify. My goodfriend Adrien from Native Pixel did a fantastic cover',
      'iframe':'https://open.spotify.com/album/1my3iLJ2RZ83mcWUtkYDTA',
      'class':'mdl-card on-the-road-again mdl-cell mdl-cell--12-col'
     },
