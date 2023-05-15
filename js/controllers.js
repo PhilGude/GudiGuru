@@ -34,10 +34,10 @@ postsApp.controller('PostsListCrtl', function ($scope, $sce) {
      'class':'mdl-card on-the-road-again mdl-cell mdl-cell--12-col'
     },
         {
-     'title': 'Electrocute single published',
+     'title': 'Electrocute single re published',
      'date': 'Friday, the 15th April 2018',
      'intro':'I applied a different mix template on a song I already published on Soundclound and decided to push it to all major streamin plateform like spotify. My goodfriend Adrien from Native Pixel did a fantastic cover',
-     'iframe':'https://open.spotify.com/album/1my3iLJ2RZ83mcWUtkYDTA',
+            'iframe':'https://www.youtube.com/embed/r-AL7Z0s5do',
      'class':'mdl-card on-the-road-again mdl-cell mdl-cell--12-col'
     },
       {
