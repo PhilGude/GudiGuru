@@ -4,8 +4,22 @@ postsApp.controller('PostsListCrtl', function ($scope, $sce) {
   $scope.trustSrc = function(src) {
     return $sce.trustAsResourceUrl(src);
   }
-  $scope.posts = [
-  {
+    $scope.posts = [
+    {
+        'title': 'Ubac',
+        'date': 'Monday the 25th april 2022',
+        'intro': 'Once again I had the pleasure to work as a mix engineer for the band Vouipe. The new release is called Ubac. Check the superb song Kulokk !',
+        'iframe': 'https://www.youtube.com/watch?v=iQSSc1huiNQ',
+        'class': 'mdl-card on-the-road-again mdl-cell mdl-cell--12-col'
+    },
+    {
+        'title': 'Lichen',
+        'date': 'Monday the 20th april 2020',
+        'intro': 'Once again I had the pleasure to work as a mix engineer for the band Vouipe. The new release is called Lichen. Check the song Dixence !',
+        'iframe': 'https://www.youtube.com/watch?v=g2duUmoRgXE',
+        'class': 'mdl-card on-the-road-again mdl-cell mdl-cell--12-col'
+    },
+    {
      'title': 'Cosmic hum',
      'date': 'Friday, the 28th Ocotober 2018',
      'intro':'Once again I had the pleasure to work as a mix engineer for the band Vouipe. The new release is called comsic hum. Check it out !',
