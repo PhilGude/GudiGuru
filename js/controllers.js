@@ -5,18 +5,25 @@ postsApp.controller('PostsListCrtl', function ($scope, $sce) {
     return $sce.trustAsResourceUrl(src);
   }
     $scope.posts = [
+        {
+            'title': 'Mother Nature',
+            'date': 'Tusday the 15th June 2023',
+            'intro': 'Today I released the song Mother Nature. Mother nature is someone we shall think about carefully that we just treat - like that - isnt it ?',
+            'iframe': 'https://distrokid.com/hyperfollow/gudiguru/mother-nature?utm_source=SendGrid&utm_medium=Email+&utm_campaign=website',
+            'class': 'mdl-card on-the-road-again mdl-cell mdl-cell--12-col'
+        },
     {
         'title': 'Ubac',
         'date': 'Monday the 25th april 2022',
         'intro': 'Once again I had the pleasure to work as a mix engineer for the band Vouipe. The new release is called Ubac. Check the superb song Kulokk !',
-        'iframe': 'https://www.youtube.com/watch?v=iQSSc1huiNQ',
+        'iframe': 'https://www.youtube.com/embed/iQSSc1huiNQ',
         'class': 'mdl-card on-the-road-again mdl-cell mdl-cell--12-col'
     },
     {
         'title': 'Lichen',
         'date': 'Monday the 20th april 2020',
         'intro': 'Once again I had the pleasure to work as a mix engineer for the band Vouipe. The new release is called Lichen. Check the song Dixence !',
-        'iframe': 'https://www.youtube.com/watch?v=g2duUmoRgXE',
+        'iframe': 'https://www.youtube.com/embed/g2duUmoRgXE',
         'class': 'mdl-card on-the-road-again mdl-cell mdl-cell--12-col'
     },
     {
